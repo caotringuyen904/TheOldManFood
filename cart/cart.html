@@ -3,59 +3,66 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>The Old Man Food</title>
 
+    <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-
-    <link rel="stylesheet" href="style.css">
-
+    <!-- custom css file link  -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+      <link rel="stylesheet" href="../about/about.css">
+      <link rel="stylesheet" href="../cart/cart.css">
 </head>
 
 <body>
-
-    <header id="bgColorHeader">
-        <a href="index.html" class="logo">
-            <img class="logoonggia" width="100px" src="./images/logoOngGia.png">
+   <header id="bgColorHeader">
+        <a href="../food/index.html" class="logo">
+            <img class="logoonggia" width="100px" src="../images/logoOngGia.png">
         </a>
 
         <div id="menu-bar" class="fas fa-bars fa-times"></div>
 
         <nav class="navbar">
-
-            <a href="index.html">Home</a>
-            <a href="#detail">Detail</a>
+            <a href="../food/index.html">Home</a>
+            <a href="../detail/detail.html">Detail</a>
             <a href="../about/about.html">About</a>
-
             <a class="admin-container" href="../admin/admin.html">Admin</a>
-            <a class="cart" href="cart.html">
 
+            <a class="cart" href="#default">
                 <i class="fa fa-shopping-cart" style="font-size:18px">
-                    <span style="right:0%;top: -8%" class='badge badge-danger' id='lblCartCount'>0</span></i>
+                    <span style="right:0%;top: -8%" class='badge badge-danger' id='lblCartCount'>0</span>
+                  </i>
             </a>
+
         </nav>
-
     </header>
-
-
-    <div class="detail-container">
-        <img id="product-image" src="" alt="">
-        <h1 id="product-name"></h1>
-        <p id="product-price"></p>
-        <p id="product-description"></p>
-        <!-- <button class="btn btn-danger add-cart">Add to cart</button> -->
+  
+    <div class="bgCartPage">
+  <div class="products-container">
+        <div class="product-title"></div>
+        <div class="product"> </div>
     </div>
 
+    <div class="product-total">
 
+    </div>
 
-    <section id="footer">
+    <div class="checkOut">
+
+    </div>
+    
+
+         </div>
+  
+   <section style=" top:auto ;border: none;" id="footer">
         <p id="footer_title">Old Man Restaurant</p>
         <article>
             <p>Ho Chi Minh branch</p>
@@ -73,17 +80,10 @@
         <a href="#" id="pageup_btn">^</a>
     </section>
 
+ 
+        <script src="../cart/cartPage.js"></script>
+        <script src="../food/index.js"></script>
+    
 
-
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-        </script> -->
-    <script src="detail.js"></script>
-    <script src="index.js"></script>    
-    <script src="cartPage.js"></script>
-
-
-
-</body>
-
-</html>
+    </body>
+    </html>

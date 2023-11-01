@@ -16,7 +16,7 @@ let productList = [
   {
     id: 1,
     inCart: 1,
-    productImg: "food/images/b-grill-beef-speacial.jpeg",
+    productImg: "../images/b-grill-beef-speacial.jpeg",
 
     productTitle: "Beef cheese",
     productPrice: 10,
@@ -27,7 +27,7 @@ let productList = [
   {
     id: 2,
     inCart: 2,
-    productImg: "food/images/b-chicken-grill.jpg",
+    productImg: "../images/b-chicken-grill.jpg",
     productTitle: "Chicken grill hotcool",
     productPrice: 8,
     productDescription:
@@ -37,7 +37,7 @@ let productList = [
   {
     id: 3,
     inCart: 0,
-    productImg: "food/images/b-chicken.jpg",
+    productImg: "../images/b-chicken.jpg",
     productTitle: "Chicken french fried",
     productPrice: 6,
     productDescription:
@@ -47,7 +47,7 @@ let productList = [
   {
     id: 4,
     inCart: 0,
-    productImg: "food/images/b-tuna_fish_double.jpg",
+    productImg: "../images/b-tuna_fish_double.jpg",
     productTitle: "Tuna fish delicous",
     productPrice: 9,
     productDescription:
@@ -57,7 +57,7 @@ let productList = [
   {
     id: 5,
     inCart: 0,
-    productImg: "food/images/f-chicken-boneless.png",
+    productImg: "../images/f-chicken-boneless.png",
     productTitle: "Chicken boneless",
     productPrice: 12,
     productDescription:
@@ -67,7 +67,7 @@ let productList = [
   {
     id: 6,
     inCart: 0,
-    productImg: "food/images/f-chicken-1p.png",
+    productImg: "../images/f-chicken-1p.png",
     productTitle: "Chicken drum stick",
     productPrice: 10,
     productDescription:
@@ -77,7 +77,7 @@ let productList = [
   {
     id: 7,
     inCart: 0,
-    productImg: "food/images/f-chicken-finger-6p.png",
+    productImg: "../images/f-chicken-finger-6p.png",
     productTitle: "Chicken finger",
     productPrice: 14,
     productDescription:
@@ -87,7 +87,7 @@ let productList = [
   {
     id: 8,
     inCart: 0,
-    productImg: "food/images/f-chicken-combo.png",
+    productImg: "../images/f-chicken-combo.png",
     productTitle: "Combo happy",
     productPrice: 14,
     productDescription:
@@ -97,7 +97,7 @@ let productList = [
   {
     id: 9,
     inCart: 0,
-    productImg: "food/images/c-cupcake-chocolate.jpg",
+    productImg: "../images/c-cupcake-chocolate.jpg",
     productTitle: "Valentine",
     productPrice: 12,
     productDescription:
@@ -107,7 +107,7 @@ let productList = [
   {
     id: 10,
     inCart: 0,
-    productImg: "food/images/c-grape-bread.jpg",
+    productImg: "../images/c-grape-bread.jpg",
     productTitle: "Break Talk",
     productDescription:
       "Some quick example text to build on the card title and make up the bulk of the card's content.",
@@ -139,7 +139,7 @@ let productList = [
   {
     id: 13,
     inCart: 0,
-    productImg: "food/images/d-drink-fruirt.jpg",
+    productImg: "../images/d-drink-fruirt.jpg",
     productTitle: "Fruirt fresh cool",
     productPrice: 12,
     productDescription:
@@ -149,7 +149,7 @@ let productList = [
   {
     id: 14,
     inCart: 0,
-    productImg: "food/images/d-cream.jpg",
+    productImg: "../images/d-cream.jpg",
     productTitle: "Cream Orie",
     productPrice: 10,
     productDescription:
@@ -159,7 +159,7 @@ let productList = [
   {
     id: 15,
     inCart: 0,
-    productImg: "./food/images/d-coffee-crosssaint.jpg",
+    productImg: "./../images/d-coffee-crosssaint.jpg",
     productTitle: "CrosSaint TourLes",
     productPrice: 14,
     productDescription:
@@ -169,7 +169,7 @@ let productList = [
   {
     id: 16,
     inCart: 0,
-    productImg: "food/images/d-chocolate.jpg",
+    productImg: "../images/d-chocolate.jpg",
     productTitle: "Chocolate Dickiese",
     productPrice: 14,
     productDescription:
@@ -330,7 +330,7 @@ const createDummyQRCode = (momoOrZalo) => {
   // Create an image element
   var imageElement = document.createElement("img");
   imageElement.src =
-    momoOrZalo === "momo" ? "images\\momo_qr.jpg" : "images\\zalopay_qr.jpg"; // Set the path to your image
+    momoOrZalo === "momo" ? "../images/momo_qr.jpg" : "../images/zalopay_qr.jpg"; // Set the path to your image
   imageElement.alt = "Description of the image";
   imageElement.width = 500;
 
@@ -536,7 +536,7 @@ payBtn.addEventListener("click", () => {
 });
 
 homeBtn.addEventListener("click", () => {
-  window.location.href = "/food/index.html";
+  window.location.href = "../food/index.html";
 });
 
 renderProductCards(products || productList);

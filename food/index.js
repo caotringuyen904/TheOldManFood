@@ -4,7 +4,7 @@ let products = [
         id: 1,
         inCart: 0,
         
-        productImg: "./images/b-grill-beef-speacial.jpeg",
+        productImg: "../images/b-grill-beef-speacial.jpeg",
         productTitle: "Beef cheese",
         productPrice: 10,
         productDescription: "Some quick example text to build on the card title and make up the bulk of the card's content.",
@@ -13,7 +13,7 @@ let products = [
     {
         id: 2,
         inCart: 0,
-        productImg: "./images/b-chicken-grill.jpg",
+        productImg: "../images/b-chicken-grill.jpg",
         productTitle: "Chicken grill hotcool",
         productPrice: 8,
         productDescription: "Some quick example text to build on the card title and make up the bulk of the card's content.",
@@ -22,7 +22,7 @@ let products = [
     {
         id: 3,
         inCart: 0,
-        productImg: "./images/b-chicken.jpg",
+        productImg: "../images/b-chicken.jpg",
         productTitle: "Chicken french fried",
         productPrice: 6,
         productDescription: "Some quick example text to build on the card title and make up the bulk of the card's content.",
@@ -31,7 +31,7 @@ let products = [
     {
         id: 4,
         inCart: 0,
-        productImg: "./images/b-tuna_fish_double.jpg",
+        productImg: "../images/b-tuna_fish_double.jpg",
         productTitle: "Tuna fish delicous",
         productPrice: 9,
         productDescription: "Some quick example text to build on the card title and make up the bulk of the card's content.",
@@ -40,7 +40,7 @@ let products = [
     {
         id: 5,
         inCart: 0,
-        productImg: "./images/f-chicken-boneless.png",
+        productImg: "../images/f-chicken-boneless.png",
         productTitle: "Chicken boneless",
         productPrice: 12,
         productDescription: "Some quick example text to build on the card title and make up the bulk of the card's content.",
@@ -49,7 +49,7 @@ let products = [
     {
         id: 6,
         inCart: 0,
-        productImg: "./images/f-chicken-1p.png",
+        productImg: "../images/f-chicken-1p.png",
         productTitle: "Chicken drum stick",
         productPrice: 10,
         productDescription: "Some quick example text to build on the card title and make up the bulk of the card's content.",
@@ -58,7 +58,7 @@ let products = [
     {
         id: 7,
         inCart: 0,
-        productImg: "./images/f-chicken-finger-6p.png",
+        productImg: "../images/f-chicken-finger-6p.png",
         productTitle: "Chicken finger",
         productPrice: 14,
         productDescription: "Some quick example text to build on the card title and make up the bulk of the card's content.",
@@ -67,7 +67,7 @@ let products = [
     {
         id: 8,
         inCart: 0,
-        productImg: "./images/f-chicken-cbx.png",
+        productImg: "../images/f-chicken-cbx.png",
         productTitle: "Combo happy",
         productPrice: 14,
         productDescription: "Some quick example text to build on the card title and make up the bulk of the card's content.",
@@ -76,7 +76,7 @@ let products = [
     {
         id: 9,
         inCart: 0,
-        productImg: "./images/c-cupcake-chocolate.jpg",
+        productImg: "../images/c-cupcake-chocolate.jpg",
         productTitle: "Valentine",
         productPrice: 12,
         productDescription: "Some quick example text to build on the card title and make up the bulk of the card's content.",
@@ -85,7 +85,7 @@ let products = [
     {
         id: 10,
         inCart: 0,
-        productImg: "./images/c-grape-bread.jpg",
+        productImg: "../images/c-grape-bread.jpg",
         productTitle: "Break Talk",
         productDescription: "Some quick example text to build on the card title and make up the bulk of the card's content.",
         productPrice: 10,
@@ -94,7 +94,7 @@ let products = [
     {
         id: 11,
         inCart: 0,
-        productImg: "./images/c-pasta.jpg",
+        productImg: "../images/c-pasta.jpg",
         productTitle: "Pasta Roma",
         productPrice: 14,
         productDescription: "Some quick example text to build on the card title and make up the bulk of the card's content.",
@@ -103,7 +103,7 @@ let products = [
     {
         id: 12,
         inCart: 0,
-        productImg: "./images/c-sandwich.jpg",
+        productImg: "../images/c-sandwich.jpg",
         productTitle: "Sanwich cheese egg",
         productPrice: 14,
         productDescription: "Some quick example text to build on the card title and make up the bulk of the card's content.",
@@ -112,7 +112,7 @@ let products = [
     {
         id: 13,
         inCart: 0,
-        productImg: "./images/d-drink-fruirt.jpg",
+        productImg: "../images/d-drink-fruirt.jpg",
         productTitle: "Fruirt fresh cool",
         productPrice: 12,
         productDescription: "Some quick example text to build on the card title and make up the bulk of the card's content.",
@@ -121,7 +121,7 @@ let products = [
     {
         id: 14,
         inCart: 0,
-        productImg: "./images/d-cream.jpg",
+        productImg: "../images/d-cream.jpg",
         productTitle: "Cream Orie",
         productPrice: 10,
         productDescription: "Some quick example text to build on the card title and make up the bulk of the card's content.",
@@ -130,7 +130,7 @@ let products = [
     {
         id: 15,
         inCart: 0,
-        productImg: "./images/d-coffee-crosssaint.jpg",
+        productImg: "../images/d-coffee-crosssaint.jpg",
         productTitle: "CrosSaint TourLes",
         productPrice: 14,
         productDescription: "Some quick example text to build on the card title and make up the bulk of the card's content.",
@@ -139,7 +139,7 @@ let products = [
     {
         id: 16,
         inCart: 0,
-        productImg: "./images/d-chocolate.jpg",
+        productImg: "../images/d-chocolate.jpg",
         productTitle: "Chocolate Dickiese",
         productPrice: 14,
         productDescription: "Some quick example text to build on the card title and make up the bulk of the card's content.",
@@ -339,7 +339,7 @@ const productImages = document.getElementsByClassName('image-container');
 for (let i = 0; i < productImages.length; i++) {
     productImages[i].addEventListener('click', () => {
         setProductDetail(products[i]);
-        window.location.href = "./detail.html";
+        window.location.href = "../detail/detail.html";
     });
 }
 
