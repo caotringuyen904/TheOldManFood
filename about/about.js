@@ -325,7 +325,8 @@ bookAParty_btn.addEventListener("click", function(){
     bookingTitle.textContent = "BOOKING FORM"
     bookingTitle.setAttribute("id", "bookingtitle")
     let bookingImg = document.createElement("img")
-    bookingImg.setAttribute("src", "./Info_img/party_1300x325.png")
+    bookingImg.setAttribute("src", "../food/images/party_1300x325.png")
+
     bookingImg.setAttribute("id","booking_img")
     partyHolder.appendChild(bookingTitle)
     partyHolder.appendChild(bookingImg)
