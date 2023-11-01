@@ -19,7 +19,7 @@ main{
 }
 /*Intro styling */
 .fading_filter{
-    background-image: url(/food/images/Intro_background-612x612.jpg);
+    background-image: url(../food/images/Intro_background-612x612.jpg);
 }
 .intro p {
     font-size: 5rem;
@@ -170,7 +170,7 @@ Design for Promotion news
     background-color: rgb(255, 0, 0, 0.8);
 }
 #partyholder{
-    background-image: url(/about/Info_img/chicken-background-1300x1390.png);
+    background-image: url(../food/images/chicken-background-1300x1390.png);
     padding: 2rem;
     margin-top: -30px;
 }
@@ -178,7 +178,7 @@ Design for Promotion news
 Styling the Career
 */
 #careerholder{
-    background-image: url(/about/Info_img/chicken-background-1300x1390.png);
+    background-image: url(../food/images/chicken-background-1300x1390.png);
     padding: 2rem;
     margin-top: -30px;
 }
@@ -432,7 +432,7 @@ media query
     }
     /*For the Career*/
     #careerholder{
-        background-image: url(/about/Info_img/Intro_background-612x612.jpg);
+        background-image: url(../food/images/Intro_background-612x612.jpg);
     }
       /*For the footer*/
     #footer{
