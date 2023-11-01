@@ -93,6 +93,8 @@ const restaurants = [
 ]
 
 console.log(restaurants)
+
+
 //Render story function
 ourStory_btn.addEventListener("click", function(){
     promotionHolder.innerHTML = ""
@@ -111,11 +113,14 @@ ourStory_btn.addEventListener("click", function(){
     }
 })
 
+// Add this code to set the "ourStory_btn" as the default and trigger the click event.
+ourStory_btn.click();
+
 promotionNew_btn.addEventListener("click", function(){
     promotionHolder.innerHTML = ""
     careerHolder.innerHTML = ""
     storyHolder.innerHTML = ""
-    partyHolder.innerHTML = ""
+    partyHolder.innerHTML = ""  
     let promotionToCart =[]
     for(let i in promotions){
         //generate a container for promotion
